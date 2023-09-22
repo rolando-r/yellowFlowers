@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    background: #1a0321;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.Con-2 {
+    display: none;
+    color: white;
+}
+
+canvas {
+    display: block;
+}
+.Contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.Con {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.Texto {
+    display: none;
+    color: white;
+}
+.Texto h2 {
+    font-size: 50px;
+}
+.Contenedor-Binicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Con-Emergente{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+}
+.cua{
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: aparecer 0.5s ease-out;
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-20px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(-50%) translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+}
+
+@media (max-width: 468px) {
+    body {
+       background: #1a0321;
+
+    }
+}
+
+.btn-neon{
+    
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0eb02;
+ 
+}
+
+.btn-neon2{
+    
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #000000;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbea05;
+ 
+}
+.btn-neon2:hover {
+    background-color: #066100;
+}
+.btn-neon1{
+     display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 30px;
+    padding: 15px 30px;
+    color: black;
+    background-color: #eeff00;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    justify-content: center;
+  align-items: center;
+ 
+}
+.btn-neon:hover{
+    background: #FFFF00;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+ }
+ .btn-neon1:hover{
+    background: #FFFF00;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+.btn-neon1 span{
+    position: absolute;
+    display: block;
+}
+
+
+
+
+
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#FF0000);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#FF0000);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#FF0000);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.Button {
+    background-color: #277f01; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+/* Cambiar el color de fondo al pasar el mouse sobre el botón */
+.Button:hover {
+    background-color: #066100;
+}
